@@ -1,0 +1,14 @@
+name = "cloudflare-worker-template"
+main="src/index.ts"
+compatibility_date = "2023-01-01"
+node_compat = true
+
+[vars]
+JWT_SECRET=""
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "cloudflare-worker-template"
+database_id = ""
+migrations_table = "migrations"
+migrations_dir = "drizzle"
